@@ -1,0 +1,538 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Home || Pander Furniture Ecommerce Bootstrap 4 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="{% static 'shop/img/favicon.ico' %}">
+    <!-- Fontawesome css -->
+    <link rel="stylesheet" href="{% static 'shop/css/font-awesome.min.css' %}">
+    <!-- Animate css -->
+    <link rel="stylesheet" href="{% static 'shop/css/animate.css' %}">
+    <!-- 7-stroke fonts css -->
+    <link rel="stylesheet" href="{% static 'shop/css/pe-icon-7-stroke.min.css' %}">
+    <!-- Ionicons fonts css -->
+    <link rel="stylesheet" href="{% static 'shop/css/ionicons.min.css' %}">
+    <!-- Nice select css -->
+    <link rel="stylesheet" href="{% static 'shop/css/nice-select.css' %}">
+    <!-- Jquery fancybox css -->
+    <link rel="stylesheet" href="{% static 'shop/css/jquery.fancybox.css' %}">
+    <!-- Jquery ui price slider css -->
+    <link rel="stylesheet" href="{% static 'shop/css/jquery-ui.min.css' %}">
+    <!-- Meanmenu css -->
+    <link rel="stylesheet" href="{% static 'shop/css/meanmenu.min.css' %}">
+    <!-- Owl carousel css -->
+    <link rel="stylesheet" href="{% static 'shop/css/owl.carousel.min.css' %}">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="{% static 'shop/css/bootstrap.min.css' %}">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="{% static 'shop/css/default.css' %}">
+    <!-- Main css -->
+    <link rel="stylesheet" href="{% static 'shop/css/style.css' %}">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="{% static 'shop/css/responsive.css' %}">
+
+    <!-- Modernizer js -->
+    <script src="{% static 'shop/js/vendor/modernizr-3.5.0.min.js' %}"></script>
+</head>
+
+<body>
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+    your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<!-- Main Wrapper Start Here -->
+<div class="wrapper box-layout">
+    <!-- Main Header Area Start Here -->
+    <header class="header-style-six">
+        <!-- Header Top Start Here -->
+        <div class="header-top">
+            <div class="container">
+                <div class="d-flex flex-wrap justify-content-md-between justify-content-center">
+                    <!-- Header Top Left Start -->
+                    <div class="header-top-left">
+                        <ul>
+                            <li>
+                                <!-- Dropdown Start -->
+                                <ul>
+                                    <li>
+                                        <a href="#"><img src="{% static 'shop/img/header/1.jpg' %}"
+                                                         alt="language-selector">English</a>
+                                    </li>
+                                </ul>
+                                <!-- Dropdown End -->
+                            </li>
+                            <li>
+                                <!-- Dropdown Start -->
+                                <ul>
+                                    <li><a href="#">USD $</a></li>
+                                </ul>
+                                <!-- Dropdown End -->
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Header Top Left End -->
+                    <!-- Header Top Right Start -->
+                    <div class="header-top-right">
+                        <ul>
+                            {% if request.session.customer %}
+                                <li><a href="#">My Account<i class="fa fa-angle-down"></i></a>
+                                    <!-- Dropdown Start -->
+                                    <ul class="ht-dropdown">
+                                        <li><a href="#">My Orders</a></li>
+                                        <li><a href="#">Change Password</a></li>
+                                    </ul>
+                                <li><a href="{% url 'logout' %}">Logout</a></li>
+                                <!-- Dropdown End -->
+                                </li>
+                            {% else %}
+                                <li><a href="{% url 'login' %}">Sign In</a></li>
+                                <li><a href="{% url 'register' %}">create an account</a></li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                    <!-- Header Top Right End -->
+                </div>
+            </div>
+            <!-- Container End -->
+        </div>
+        <!-- Header Top End Here -->
+        <!-- Header Middle Start Here -->
+        <div class="header-middle white-bg">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Logo Start -->
+                    <div class="col-xl-3 col-lg-3 col-md-4">
+                        <div class="logo text-md-start mt-sm-35 text-center">
+                            <a href="index.html"><img src="{% static 'shop/img/logo/logo.png' %}" alt="logo-image"></a>
+                        </div>
+                    </div>
+                    <!-- Logo End -->
+                    <!-- Menu Item Start Here -->
+                    <div class="col-xl-5 col-lg-4 d-none d-lg-block">
+                        <nav>
+                            <ul class="header-bottom-list d-flex">
+                                <li><a href="{% url 'index' %}">Home</a></li>
+                                <li><a href="javascript:void(0)">Shop</a></li>
+                                <li><a href="javascript:void(0)">Conatct</a></li>
+                                <li><a href="javascript:void(0)">About Us</a></li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- Menu Item End Here -->
+                    <!-- Categorie Search Box End Here -->
+
+                    <!-- Cart Box Start Here -->
+                    <div class="col-xl-4 col-lg-5 col-md-8">
+                        <div class="cart-box">
+                            <ul class="d-flex justify-content-lg-end  align-items-center">
+                                <li>
+                                    <a href="#"><img src="{% static 'shop/img/vertical-menu/icon_cart.png' %}"
+                                                     alt="cart-icon"><span class="total-pro">2</span><span
+                                            class="my-cart"><span>my cart</span></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Cart Box End Here -->
+
+                    <!-- Categorie Search Box Start Here -->
+                    <div class="col-12 d-block d-lg-none">
+                        <div class="categorie-search-box">
+                            <form action="#">
+                                <input type="text" name="search" placeholder="Search entire store here...">
+                                <button><span class="pe-7s-search"></span></button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Categorie Search Box End Here -->
+
+                </div>
+                <!-- Row End -->
+                <!-- Mobile Menu Start Here -->
+                <div class="mobile-menu d-block d-lg-none">
+                    <nav>
+                        <ul>
+                            <li><a href="{% url 'index' %}">Home</a></li>
+                            <li><a href="javascript:void(0)">Shop</a></li>
+                            <li><a href="javascript:void(0)">Conatct</a></li>
+                            <li><a href="javascript:void(0)">About Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Mobile Menu End Here -->
+            </div>
+            <!-- Container End -->
+        </div>
+        <!-- Header Middle End Here -->
+
+        <!-- Header Bottom Start Here -->
+        <div class="header-bottom orange-bg">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-3 col-lg-4">
+                        <!-- Vertical Menu Start Here -->
+                        <div class="vertical-menu">
+                            <span class="categorie-title">Category Menu</span>
+                            <nav>
+                                <ul class="vertical-menu-list menu-hidden">
+                                    <li><a href="shop.html">sales off</a></li>
+                                    <li><a href="shop.html">Biographies</a></li>
+                                    <li><a href="shop.html">Calendars</a></li>
+                                    <li><a href="shop.html">Comics</a></li>
+                                    <li><a href="shop.html">Cookbooks</a></li>
+                                    <li class="rx-child"><a href="shop.html">Education</a></li>
+                                    <li class="rx-child"><a href="shop.html">Engineering</a></li>
+                                    <li class="rx-child"><a href="shop.html">Health, Fitness</a></li>
+                                    <li class="rx-parent">
+                                        <a class="rx-default"><span class="cat-thumb  fa fa-plus-circle"></span>More
+                                            Categories</a>
+                                        <a class="rx-show"><span class="cat-thumb  fa fa-minus-circle"></span>Close Menu</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- Vertical Menu End Here -->
+                    </div>
+                    <div class="col-xl-9 col-lg-8 d-none d-lg-block">
+                        <div class="categorie-search-box">
+                            <form action="#">
+                                <input name="search" placeholder="Search entire store here..." type="text">
+                                <button><span class="pe-7s-search"></span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Row End -->
+            </div>
+            <!-- Container End -->
+        </div>
+        <!-- Header Bottom End Here -->
+
+    </header>
+    <!-- Main Header Area End Here -->
+    {% block main %}
+
+    {% endblock %}
+
+
+    <!-- Social Link Area Start -->
+    <div class="social-link-area social-link-style-four dark-white-bg ptb-55">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-all-40">
+                    <div class="twitter-post">
+                        <h3 class="social-title">Latest Tweets</h3>
+                        <div class="twitter-content">
+                            <div class="twitter-user"><a href="#">Example themes Club</a> <a href="#">@demothemes</a>
+                            </div>
+                            <div class="twitter-desc">
+                                <p>Check out "pander - Furniture ecommerce #HTML #" <br> on #Envato by <a
+                                        href="#">@exampletheme</a> #Themeforest <a href="#">you twitter
+                                    link </a><br><span class="tweet-time"><a href="#">23 Sep</a></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="social-share">
+                        <h3 class="social-title">Stay Connected</h3>
+                        <ul class="social-share-list">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Social Link Area End -->
+    <!-- Footer Area Start Here -->
+    <footer class="black-bg footer-style-two pb-35">
+        <div class="container">
+            <!-- Footer Top Start -->
+            <div class="footer-top ptb-15">
+                <nav>
+                    <ul class="footer-menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Enavle cookies</a></li>
+                        <li><a href="#">Privacy and Cookie Policy</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Footer Top End -->
+            <!-- Footer Middle Start -->
+            <div class="footer-middle ptb-45">
+                <div class="row">
+                    <!-- Single Footer Start -->
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-6 mb-all-40">
+                        <div class="single-footer">
+                            <h3 class="footer-title">my account</h3>
+                            <div class="footer-content">
+                                <ul class="footer-list">
+                                    <li class="first"><a href="#">My Addresses</a></li>
+                                    <li><a href="#">Gift Vouchers</a></li>
+                                    <li><a href="#">Returns and Exchanges</a></li>
+                                    <li><a href="#">Shipping Options</a></li>
+                                    <li><a href="#">My personal info</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Footer Start -->
+                    <!-- Single Footer Start -->
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-6 mb-all-40">
+                        <div class="single-footer style-change">
+                            <h3 class="footer-title">information</h3>
+                            <div class="footer-content">
+                                <ul class="footer-list">
+                                    <li class="first"><a href="#">About us</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Terms of Use</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Site Map</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Footer Start -->
+                    <!-- Single Footer Start -->
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-6 mb-sf-40">
+                        <div class="single-footer">
+                            <h3 class="footer-title">custom</h3>
+                            <div class="footer-content">
+                                <ul class="footer-list">
+                                    <li class="first"><a href="#">Product Recall</a></li>
+                                    <li><a href="#">Gift Vouchers</a></li>
+                                    <li><a href="#">Returns and Exchanges</a></li>
+                                    <li><a href="#">Shipping Options</a></li>
+                                    <li><a href="#">Help &amp; FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Footer Start -->
+                    <!-- Single Footer Start -->
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-6">
+                        <div class="single-footer">
+                            <h3 class="footer-title">store information</h3>
+                            <div class="footer-content">
+                                <ul class="footer-list last-footer">
+                                    <li class="list-upper">
+                                        <p>my company
+                                            <span>42 avenue des Champs Elysées </span><span>1234  your street</span></p>
+                                    </li>
+                                    <li>
+                                        <p>Call us now : <span> (+1)866-540-3229</span></p>
+                                    </li>
+                                    <li>
+                                        <p>Email : <span>support@example.com</span></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Footer Start -->
+                </div>
+                <!-- Row End -->
+            </div>
+            <!-- Footer Middle End -->
+            <!-- Footer Bottom Start -->
+            <div class="footer-bottom pt-35">
+                <div class="d-flex flex-wrap justify-content-md-between justify-content-center footer-bottom-content">
+                    <div class="footer-copyright mb-sm-15">
+                        <p>Your Store Copyright Here. </p>
+                        <p>Powered By Pander </p>
+                    </div>
+                    <div class="footer-payment">
+                        <a href="#"><img src="{% static 'shop/img/payment/payment.png' %}" alt="payment-img"
+                                         class="img"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Bottom End -->
+        </div>
+    </footer>
+    <!-- Footer Area End Here -->
+    <!-- Quick View Content Start -->
+    <div class="main-product-thumbnail quick-thumb-content">
+        <div class="container">
+            <!-- The Modal -->
+            <div class="modal fade" id="product-window">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal">&times;</button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <div class="row">
+                                <!-- Main Thumbnail Image Start -->
+                                <div class="col-lg-6 col-md-6 mb-all-40">
+                                    <!-- Thumbnail Large Image start -->
+                                    <div class="tab-content">
+                                        <div id="pro-1" class="tab-pane fade show active">
+                                            <a data-fancybox="images" href="img/products/p2.jpg"><img
+                                                    src="img/products/p2.jpg" alt="product-view"></a>
+                                        </div>
+                                        <div id="pro-2" class="tab-pane fade">
+                                            <a data-fancybox="images" href="img/products/p5.jpg"><img
+                                                    src="img/products/p5.jpg" alt="product-view"></a>
+                                        </div>
+                                        <div id="pro-3" class="tab-pane fade">
+                                            <a data-fancybox="images" href="img/products/p3.jpg"><img
+                                                    src="img/products/p3.jpg" alt="product-view"></a>
+                                        </div>
+                                        <div id="pro-4" class="tab-pane fade">
+                                            <a data-fancybox="images" href="img/products/p7.jpg"><img
+                                                    src="img/products/p7.jpg" alt="product-view"></a>
+                                        </div>
+                                    </div>
+                                    <!-- Thumbnail Large Image End -->
+                                    <!-- Thumbnail Image End -->
+                                    <div class="product-thumbnail">
+                                        <div class="thumb-menu owl-carousel nav tabs-area" role="tablist">
+                                            <a class="active" data-bs-toggle="tab" href="#pro-1"><img
+                                                    src="img/thumbnail/t1.jpg" alt="product-thumbnail"></a>
+                                            <a data-bs-toggle="tab" href="#pro-2"><img src="img/thumbnail/t2.jpg"
+                                                                                       alt="product-thumbnail"></a>
+                                            <a data-bs-toggle="tab" href="#pro-3"><img src="img/thumbnail/t3.jpg"
+                                                                                       alt="product-thumbnail"></a>
+                                            <a data-bs-toggle="tab" href="#pro-4"><img src="img/thumbnail/t4.jpg"
+                                                                                       alt="product-thumbnail"></a>
+                                        </div>
+                                    </div>
+                                    <!-- Thumbnail image end -->
+                                </div>
+                                <!-- Main Thumbnail Image End -->
+                                <!-- Thumbnail Description Start -->
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="thubnail-desc fix">
+                                        <h3 class="product-header">Faded Short Sleeves T-shirt</h3>
+                                        <ul class="rating-summary">
+                                            <li class="rating-pro">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </li>
+                                            <li class="read-review"><a href="#">read reviews (1)</a></li>
+                                            <li class="write-review"><a href="#">write review</a></li>
+                                        </ul>
+                                        <div class="pro-thumb-price mt-10">
+                                            <p class="d-flex align-items-center"><span
+                                                    class="prev-price">16.51</span><span
+                                                    class="price">$15.19</span><span class="saving-price">-5%</span></p>
+                                        </div>
+                                        <p class="pro-desc-details">Faded short sleeves t-shirt with high neckline. Soft
+                                            and stretchy material for a comfortable fit. Accessorize with a straw hat
+                                            and you're ready for summer!</p>
+                                        <div class="product-size mtb-30 clearfix">
+                                            <label>Size</label>
+                                            <select class="">
+                                                <option>S</option>
+                                                <option>M</option>
+                                                <option>L</option>
+                                            </select>
+                                        </div>
+                                        <div class="color clearfix mb-30">
+                                            <label>color</label>
+                                            <ul class="color-list">
+                                                <li>
+                                                    <a class="white" href="#"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="orange active" href="#"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="paste" href="#"></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="quatity-stock">
+                                            <label>Quantity</label>
+                                            <ul class="d-flex flex-wrap  align-items-center">
+                                                <li class="box-quantity">
+                                                    <form action="#">
+                                                        <input class="quantity" type="number" min="1" value="1">
+                                                    </form>
+                                                </li>
+                                                <li>
+                                                    <button class="pro-cart">add to cart</button>
+                                                </li>
+                                                <li class="pro-ref">
+                                                    <p><span class="in-stock"><i class="ion-checkmark-round"></i> in stock</span>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="social-sharing mt-30">
+                                            <ul>
+                                                <li><label>share</label></li>
+                                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Thumbnail Description End -->
+                            </div>
+                        </div>
+                        <!-- Modal footer -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quick View Content End -->
+</div>
+<!-- Main Wrapper End Here -->
+
+<!-- jquery 3.3.1 -->
+<script src="{% static 'shop/js/vendor/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'shop/js/vendor/jquery-migrate-3.3.1.min.js' %}"></script>
+<!-- Countdown js -->
+<script src="{% static 'shop/js/jquery.countdown.min.js' %}"></script>
+<!-- Mobile menu js -->
+<script src="{% static 'shop/js/jquery.meanmenu.min.js' %}"></script>
+<!-- ScrollUp js -->
+<script src="{% static 'shop/js/jquery.scrollUp.js' %}"></script>
+<!-- Fancybox js -->
+<script src="{% static 'shop/js/jquery.fancybox.min.js' %}"></script>
+<!-- Jquery nice select js -->
+<script src="{% static 'shop/js/jquery.nice-select.min.js' %}"></script>
+<!-- Jquery ui price slider js -->
+<script src="{% static 'shop/js/jquery-ui.min.js' %}"></script>
+<!-- Owl carousel -->
+<script src="{% static 'shop/js/owl.carousel.min.js' %}"></script>
+<!-- Bootstrap popper js -->
+<script src="{% static 'shop/js/popper.min.js' %}"></script>
+<!-- Bootstrap js -->
+<script src="{% static 'shop/js/bootstrap.min.js' %}"></script>
+<!-- Plugin js -->
+<script src="{% static 'shop/js/plugins.js' %}"></script>
+<!-- Main activaion js -->
+<script src="{% static 'shop/js/main.js' %}"></script>
+</body>
+
+</html>

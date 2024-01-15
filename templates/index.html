@@ -1,0 +1,909 @@
+{% extends 'ShopLayout.html' %}
+{% load static %}
+
+
+{% block main %}
+    <!-- Slider Area Start -->
+    <div class="slider-area slider-style-three slider-style-six">
+        <!-- Slider Area Start Here -->
+        <div class="slider-activation owl-carousel">
+            <!-- Start Single Slide -->
+            <div class="slide align-center-left fullscreen animation-style-02 bg-image-17">
+                <div class="slider-progress"></div>
+                <div class="container">
+                    <div class="slider-content text-center">
+                        <h1>summer sale</h1>
+                        <h2>up to 35% off dining<span>tables 2018</span></h2>
+                        <p>for a space that stays with you</p>
+                        <div class="slide-btn">
+                            <a href="shop.html">Shop Now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Single Slide -->
+            <!-- Start Single Slide -->
+            <div class="slide align-center-left fullscreen animation-style-01 bg-image-16">
+                <div class="slider-progress"></div>
+                <div class="container">
+                    <div class="slider-content">
+                        <h1>the new lamp</h1>
+                        <h2>love your home</h2>
+                        <p>love your lighting, love your decor</p>
+                        <div class="slide-btn">
+                            <a href="shop.html">Shop Now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Single Slide -->
+        </div>
+        <!-- Slider Area End Here -->
+    </div>
+    <!-- Slider Area End -->
+
+    <!-- Banner Area Start Here -->
+    <div class="banner-area mt-30">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 mb-sm-30">
+                    <div class="single-banner zoom">
+                        <a href="shop.html"><img src="{% static 'shop/img/banner/b14.jpg' %}" alt="banner-img"></a>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-9">
+                    <div class="multi-banner">
+                        <div class="single-banner zoom img-1">
+                            <a href="shop.html"><img src="{% static 'shop/img/banner/b9.jpg' %}" alt="banner-img"></a>
+                        </div>
+                        <div class="single-banner zoom img-2">
+                            <a href="shop.html"><img src="{% static 'shop/img/banner/b10.jpg' %}" alt="banner-img"></a>
+                        </div>
+                        <div class="single-banner zoom img-3">
+                            <a href="shop.html"><img src="{% static 'shop/img/banner/b15.jpg' %}" alt="banner-img"></a>
+                        </div>
+                        <div class="single-banner zoom img-4">
+                            <a href="shop.html"><img src="{% static 'shop/img/banner/b16.jpg' %}" alt="banner-img"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner Area End Here -->
+
+    <!-- Our Product Area Start Here -->
+    <div class="our-product new-arrival-style-four pt-60">
+        <div class="container">
+            <!-- Section Title Start -->
+            <div class="section-title text-center">
+                <h2>Category products</h2>
+                <p>Browse the collection of our products and top interresting products.ll definitely find what you are
+                    looking for.</p>
+            </div>
+            <!-- Section Title End -->
+            <div class="main-product-tab-area">
+                <!-- Nav tabs -->
+                <ul class="nav tabs-area pro-tabs-area" role="tablist">
+                    <li class="nav-item">
+                        <a class="active" data-bs-toggle="tab" href="#furniture">lighting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-bs-toggle="tab" href="#lighting">rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-bs-toggle="tab" href="#rooms">new collection</a>
+                    </li>
+                </ul>
+                <!-- Tab Contetn Start -->
+                <div class="tab-content">
+                    <div id="furniture" class="tab-pane fade show active">
+                        <!-- Furniture Product Activation Start Here -->
+                        <div class="our-pro-active owl-carousel">
+                            <!-- Single Product Start Here -->
+                            <div class="single-pander-product">
+                                <div class="pro-img">
+                                    <a href="product-details.html"><img src="{% static 'shop/img/products/p1.jpg' %}"
+                                                                        alt="product-img"></a>
+                                    <span class="sticker-new">new</span>
+                                    <div class="quick-view-pro">
+                                        <a data-bs-toggle="modal" data-bs-target="#product-window" class="quick-view"
+                                           href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="pro-content">
+                                    <div class="rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                    <h4 class="pro-title"><a href="product-details.html">Chaz Kangeroo Hoodie</a></h4>
+                                    <p><span class="price">$45.50</span></p>
+                                    <div class="pro-actions">
+                                        <div class="actions-primary">
+                                            <a href="cart.html" class="add-to-cart" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Cart">Add To Cart</a>
+                                        </div>
+                                        <div class="actions-secondary">
+                                            <a class="cart-wishlist" href="wishlist.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Wishlist"></a>
+                                            <a class="cart-compare" href="compare.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Compare"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Product End Here -->
+                            <!-- Single Product Start Here -->
+                            <div class="single-pander-product">
+                                <div class="pro-img">
+                                    <a href="product-details.html"><img src="{% static 'shop/img/products/p2.jpg' %}"
+                                                                        alt="product-img"></a>
+                                    <span class="sticker-new">new</span>
+                                    <span class="sticker-sale">-5%</span>
+                                    <div class="quick-view-pro">
+                                        <a data-bs-toggle="modal" data-bs-target="#product-window" class="quick-view"
+                                           href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="pro-content">
+                                    <div class="rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                    <h4 class="pro-title"><a href="product-details.html">Sprite Yoga Straps1</a></h4>
+                                    <p><span class="price">$65.00</span></p>
+                                    <div class="pro-actions">
+                                        <div class="actions-primary">
+                                            <a href="cart.html" class="add-to-cart" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Cart">Add To Cart</a>
+                                        </div>
+                                        <div class="actions-secondary">
+                                            <a class="cart-wishlist" href="wishlist.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Wishlist"></a>
+                                            <a class="cart-compare" href="compare.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Compare"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Product End Here -->
+                            <!-- Single Product Start Here -->
+                            <div class="single-pander-product">
+                                <div class="pro-img">
+                                    <a href="product-details.html"><img src="{% static 'shop/img/products/p3.jpg' %}"
+                                                                        alt="product-img"></a>
+                                    <span class="sticker-new">new</span>
+                                    <div class="quick-view-pro">
+                                        <a data-bs-toggle="modal" data-bs-target="#product-window" class="quick-view"
+                                           href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="pro-content">
+                                    <div class="rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                    <h4 class="pro-title"><a href="product-details.html">Voyage Yoga Bag</a></h4>
+                                    <p><span class="price">$61.21</span><span class="prev-price">$64.50</span></p>
+                                    <div class="pro-actions">
+                                        <div class="actions-primary">
+                                            <a href="cart.html" class="add-to-cart" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Cart">Add To Cart</a>
+                                        </div>
+                                        <div class="actions-secondary">
+                                            <a class="cart-wishlist" href="wishlist.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Wishlist"></a>
+                                            <a class="cart-compare" href="compare.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Compare"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Product End Here -->
+                            <!-- Single Product Start Here -->
+                            <div class="single-pander-product">
+                                <div class="pro-img">
+                                    <a href="product-details.html"><img src="{% static 'shop/img/products/p4.jpg' %}"
+                                                                        alt="product-img"></a>
+                                    <span class="sticker-new">new</span>
+                                    <span class="sticker-sale">-5%</span>
+                                    <div class="quick-view-pro">
+                                        <a data-bs-toggle="modal" data-bs-target="#product-window" class="quick-view"
+                                           href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="pro-content">
+                                    <div class="rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                    <h4 class="pro-title"><a href="product-details.html">Fusion Backpack</a></h4>
+                                    <p><span class="price">$72.50</span></p>
+                                    <div class="pro-actions">
+                                        <div class="actions-primary">
+                                            <a href="cart.html" class="add-to-cart" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Cart">Add To Cart</a>
+                                        </div>
+                                        <div class="actions-secondary">
+                                            <a class="cart-wishlist" href="wishlist.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Wishlist"></a>
+                                            <a class="cart-compare" href="compare.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Compare"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Product End Here -->
+                            <!-- Single Product Start Here -->
+                            <div class="single-pander-product">
+                                <div class="pro-img">
+                                    <a href="product-details.html"><img src="{% static 'shop/img/products/p5.jpg' %}"
+                                                                        alt="product-img"></a>
+                                    <span class="sticker-new">new</span>
+                                    <span class="sticker-sale">-5%</span>
+                                    <div class="quick-view-pro">
+                                        <a data-bs-toggle="modal" data-bs-target="#product-window" class="quick-view"
+                                           href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="pro-content">
+                                    <div class="rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                    <h4 class="pro-title"><a href="product-details.html">Impulse Duffle</a></h4>
+                                    <p><span class="price">$45.50</span><span class="prev-price">$30.50</span></p>
+                                    <div class="pro-actions">
+                                        <div class="actions-primary">
+                                            <a href="cart.html" class="add-to-cart" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Cart">Add To Cart</a>
+                                        </div>
+                                        <div class="actions-secondary">
+                                            <a class="cart-wishlist" href="wishlist.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Wishlist"></a>
+                                            <a class="cart-compare" href="compare.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Compare"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Product End Here -->
+                            <!-- Single Product Start Here -->
+                            <div class="single-pander-product">
+                                <div class="pro-img">
+                                    <a href="product-details.html"><img src="{% static 'shop/img/products/p6.jpg' %}"
+                                                                        alt="product-img"></a>
+                                    <span class="sticker-new">new</span>
+                                    <span class="sticker-sale">-5%</span>
+                                    <div class="quick-view-pro">
+                                        <a data-bs-toggle="modal" data-bs-target="#product-window" class="quick-view"
+                                           href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="pro-content">
+                                    <div class="rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                    <h4 class="pro-title"><a href="product-details.html">Field Messenger</a></h4>
+                                    <p><span class="price">$55.50</span><span class="prev-price">$59.50</span></p>
+                                    <div class="pro-actions">
+                                        <div class="actions-primary">
+                                            <a href="cart.html" class="add-to-cart" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Cart">Add To Cart</a>
+                                        </div>
+                                        <div class="actions-secondary">
+                                            <a class="cart-wishlist" href="wishlist.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Wishlist"></a>
+                                            <a class="cart-compare" href="compare.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Compare"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Product End Here -->
+                            <!-- Single Product Start Here -->
+                            <div class="single-pander-product">
+                                <div class="pro-img">
+                                    <a href="product-details.html"><img src="{% static 'shop/img/products/p7.jpg' %}"
+                                                                        alt="product-img"></a>
+                                    <span class="sticker-new">new</span>
+                                    <span class="sticker-sale">-5%</span>
+                                    <div class="quick-view-pro">
+                                        <a data-bs-toggle="modal" data-bs-target="#product-window" class="quick-view"
+                                           href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="pro-content">
+                                    <div class="rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                    <h4 class="pro-title"><a href="product-details.html">Field Messenger</a></h4>
+                                    <p><span class="price">$42.50</span></p>
+                                    <div class="pro-actions">
+                                        <div class="actions-primary">
+                                            <a href="cart.html" class="add-to-cart" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Cart">Add To Cart</a>
+                                        </div>
+                                        <div class="actions-secondary">
+                                            <a class="cart-wishlist" href="wishlist.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Wishlist"></a>
+                                            <a class="cart-compare" href="compare.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Compare"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Product End Here -->
+                        </div>
+                        <!-- Furniture Product Activation End Here -->
+                    </div>
+                    <!-- #furniture End Here -->
+                    <div id="lighting" class="tab-pane fade">
+                        <!-- Lighting Product Activation Start Here -->
+                        <div class="our-pro-active owl-carousel">
+                            <!-- Single Product Start Here -->
+                            <div class="single-pander-product">
+                                <div class="pro-img">
+                                    <a href="product-details.html"><img src="{% static 'shop/img/products/p7.jpg' %}"
+                                                                        alt="product-img"></a>
+                                    <span class="sticker-new">new</span>
+                                    <div class="quick-view-pro">
+                                        <a data-bs-toggle="modal" data-bs-target="#product-window" class="quick-view"
+                                           href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="pro-content">
+                                    <div class="rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                    <h4 class="pro-title"><a href="product-details.html">Sprite Yoga Straps1</a></h4>
+                                    <p><span class="price">$45.50</span></p>
+                                    <div class="pro-actions">
+                                        <div class="actions-primary">
+                                            <a href="cart.html" class="add-to-cart" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Cart">Add To Cart</a>
+                                        </div>
+                                        <div class="actions-secondary">
+                                            <a class="cart-wishlist" href="wishlist.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Wishlist"></a>
+                                            <a class="cart-compare" href="compare.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Compare"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Product End Here -->
+                            <!-- Single Product Start Here -->
+                            <div class="single-pander-product">
+                                <div class="pro-img">
+                                    <a href="product-details.html"><img src="{% static 'shop/img/products/p6.jpg' %}"
+                                                                        alt="product-img"></a>
+                                    <span class="sticker-new">new</span>
+                                    <span class="sticker-sale">-5%</span>
+                                    <div class="quick-view-pro">
+                                        <a data-bs-toggle="modal" data-bs-target="#product-window" class="quick-view"
+                                           href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="pro-content">
+                                    <div class="rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                    <h4 class="pro-title"><a href="product-details.html">Chaz Kangeroo Hoodie </a></h4>
+                                    <p><span class="price">$65.00</span></p>
+                                    <div class="pro-actions">
+                                        <div class="actions-primary">
+                                            <a href="cart.html" class="add-to-cart" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Cart">Add To Cart</a>
+                                        </div>
+                                        <div class="actions-secondary">
+                                            <a class="cart-wishlist" href="wishlist.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Wishlist"></a>
+                                            <a class="cart-compare" href="compare.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Compare"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Product End Here -->
+                            <!-- Single Product Start Here -->
+                            <div class="single-pander-product">
+                                <div class="pro-img">
+                                    <a href="product-details.html"><img src="{% static 'shop/img/products/p5.jpg' %}"
+                                                                        alt="product-img"></a>
+                                    <span class="sticker-new">new</span>
+                                    <div class="quick-view-pro">
+                                        <a data-bs-toggle="modal" data-bs-target="#product-window" class="quick-view"
+                                           href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="pro-content">
+                                    <div class="rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                    <h4 class="pro-title"><a href="product-details.html">Fusion Backpack</a></h4>
+                                    <p><span class="price">$61.21</span><span class="prev-price">$64.50</span></p>
+                                    <div class="pro-actions">
+                                        <div class="actions-primary">
+                                            <a href="cart.html" class="add-to-cart" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Cart">Add To Cart</a>
+                                        </div>
+                                        <div class="actions-secondary">
+                                            <a class="cart-wishlist" href="wishlist.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Wishlist"></a>
+                                            <a class="cart-compare" href="compare.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Compare"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Product End Here -->
+                            <!-- Single Product Start Here -->
+                            <div class="single-pander-product">
+                                <div class="pro-img">
+                                    <a href="product-details.html"><img src="{% static 'shop/img/products/p4.jpg' %}"
+                                                                        alt="product-img"></a>
+                                    <span class="sticker-new">new</span>
+                                    <span class="sticker-sale">-5%</span>
+                                    <div class="quick-view-pro">
+                                        <a data-bs-toggle="modal" data-bs-target="#product-window" class="quick-view"
+                                           href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="pro-content">
+                                    <div class="rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                    <h4 class="pro-title"><a href="product-details.html">Voyage Yoga Bag </a></h4>
+                                    <p><span class="price">$72.50</span></p>
+                                    <div class="pro-actions">
+                                        <div class="actions-primary">
+                                            <a href="cart.html" class="add-to-cart" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Cart">Add To Cart</a>
+                                        </div>
+                                        <div class="actions-secondary">
+                                            <a class="cart-wishlist" href="wishlist.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Wishlist"></a>
+                                            <a class="cart-compare" href="compare.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Compare"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Product End Here -->
+                            <!-- Single Product Start Here -->
+                            <div class="single-pander-product">
+                                <div class="pro-img">
+                                    <a href="product-details.html"><img src="{% static 'shop/img/products/p3.jpg' %}"
+                                                                        alt="product-img"></a>
+                                    <span class="sticker-new">new</span>
+                                    <span class="sticker-sale">-5%</span>
+                                    <div class="quick-view-pro">
+                                        <a data-bs-toggle="modal" data-bs-target="#product-window" class="quick-view"
+                                           href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="pro-content">
+                                    <div class="rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                    <h4 class="pro-title"><a href="product-details.html">Impulse Duffle</a></h4>
+                                    <p><span class="price">$45.50</span><span class="prev-price">$30.50</span></p>
+                                    <div class="pro-actions">
+                                        <div class="actions-primary">
+                                            <a href="cart.html" class="add-to-cart" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Cart">Add To Cart</a>
+                                        </div>
+                                        <div class="actions-secondary">
+                                            <a class="cart-wishlist" href="wishlist.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Wishlist"></a>
+                                            <a class="cart-compare" href="compare.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Compare"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Product End Here -->
+                            <!-- Single Product Start Here -->
+                            <div class="single-pander-product">
+                                <div class="pro-img">
+                                    <a href="product-details.html"><img src="{% static 'shop/img/products/p1.jpg' %}"
+                                                                        alt="product-img"></a>
+                                    <span class="sticker-new">new</span>
+                                    <span class="sticker-sale">-5%</span>
+                                    <div class="quick-view-pro">
+                                        <a data-bs-toggle="modal" data-bs-target="#product-window" class="quick-view"
+                                           href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="pro-content">
+                                    <div class="rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                    <h4 class="pro-title"><a href="product-details.html">Field Messenger</a></h4>
+                                    <p><span class="price">$55.50</span><span class="prev-price">$59.50</span></p>
+                                    <div class="pro-actions">
+                                        <div class="actions-primary">
+                                            <a href="cart.html" class="add-to-cart" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Cart">Add To Cart</a>
+                                        </div>
+                                        <div class="actions-secondary">
+                                            <a class="cart-wishlist" href="wishlist.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Wishlist"></a>
+                                            <a class="cart-compare" href="compare.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Compare"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Product End Here -->
+                            <!-- Single Product Start Here -->
+                            <div class="single-pander-product">
+                                <div class="pro-img">
+                                    <a href="product-details.html"><img src="{% static 'shop/img/products/p2.jpg' %}"
+                                                                        alt="product-img"></a>
+                                    <span class="sticker-new">new</span>
+                                    <span class="sticker-sale">-5%</span>
+                                    <div class="quick-view-pro">
+                                        <a data-bs-toggle="modal" data-bs-target="#product-window" class="quick-view"
+                                           href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="pro-content">
+                                    <div class="rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                    <h4 class="pro-title"><a href="product-details.html">Field Messenger</a></h4>
+                                    <p><span class="price">$42.50</span></p>
+                                    <div class="pro-actions">
+                                        <div class="actions-primary">
+                                            <a href="cart.html" class="add-to-cart" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Cart">Add To Cart</a>
+                                        </div>
+                                        <div class="actions-secondary">
+                                            <a class="cart-wishlist" href="wishlist.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Wishlist"></a>
+                                            <a class="cart-compare" href="compare.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Compare"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Product End Here -->
+                        </div>
+                        <!-- Lighting Product Activation End Here -->
+                    </div>
+                    <!-- #lighting End Here -->
+                    <div id="rooms" class="tab-pane fade">
+                        <!-- Rooms Product Activation Start Here -->
+                        <div class="our-pro-active owl-carousel">
+                            <!-- Single Product Start Here -->
+                            <div class="single-pander-product">
+                                <div class="pro-img">
+                                    <a href="product-details.html"><img src="{% static 'shop/img/products/p4.jpg' %}"
+                                                                        alt="product-img"></a>
+                                    <span class="sticker-new">new</span>
+                                    <div class="quick-view-pro">
+                                        <a data-bs-toggle="modal" data-bs-target="#product-window" class="quick-view"
+                                           href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="pro-content">
+                                    <div class="rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                    <h4 class="pro-title"><a href="product-details.html">Chaz Kangeroo Hoodie</a></h4>
+                                    <p><span class="price">$45.50</span></p>
+                                    <div class="pro-actions">
+                                        <div class="actions-primary">
+                                            <a href="cart.html" class="add-to-cart" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Cart">Add To Cart</a>
+                                        </div>
+                                        <div class="actions-secondary">
+                                            <a class="cart-wishlist" href="wishlist.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Wishlist"></a>
+                                            <a class="cart-compare" href="compare.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Compare"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Product End Here -->
+                            <!-- Single Product Start Here -->
+                            <div class="single-pander-product">
+                                <div class="pro-img">
+                                    <a href="product-details.html"><img src="{% static 'shop/img/products/p1.jpg' %}"
+                                                                        alt="product-img"></a>
+                                    <span class="sticker-new">new</span>
+                                    <span class="sticker-sale">-5%</span>
+                                    <div class="quick-view-pro">
+                                        <a data-bs-toggle="modal" data-bs-target="#product-window" class="quick-view"
+                                           href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="pro-content">
+                                    <div class="rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                    <h4 class="pro-title"><a href="product-details.html">Sprite Yoga Straps1</a></h4>
+                                    <p><span class="price">$65.00</span></p>
+                                    <div class="pro-actions">
+                                        <div class="actions-primary">
+                                            <a href="cart.html" class="add-to-cart" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Cart">Add To Cart</a>
+                                        </div>
+                                        <div class="actions-secondary">
+                                            <a class="cart-wishlist" href="wishlist.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Wishlist"></a>
+                                            <a class="cart-compare" href="compare.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Compare"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Product End Here -->
+                            <!-- Single Product Start Here -->
+                            <div class="single-pander-product">
+                                <div class="pro-img">
+                                    <a href="product-details.html"><img src="{% static 'shop/img/products/p3.jpg' %}"
+                                                                        alt="product-img"></a>
+                                    <span class="sticker-new">new</span>
+                                    <div class="quick-view-pro">
+                                        <a data-bs-toggle="modal" data-bs-target="#product-window" class="quick-view"
+                                           href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="pro-content">
+                                    <div class="rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                    <h4 class="pro-title"><a href="product-details.html">Voyage Yoga Bag</a></h4>
+                                    <p><span class="price">$61.21</span><span class="prev-price">$64.50</span></p>
+                                    <div class="pro-actions">
+                                        <div class="actions-primary">
+                                            <a href="cart.html" class="add-to-cart" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Cart">Add To Cart</a>
+                                        </div>
+                                        <div class="actions-secondary">
+                                            <a class="cart-wishlist" href="wishlist.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Wishlist"></a>
+                                            <a class="cart-compare" href="compare.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Compare"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Product End Here -->
+                            <!-- Single Product Start Here -->
+                            <div class="single-pander-product">
+                                <div class="pro-img">
+                                    <a href="product-details.html"><img src="{% static 'shop/img/products/p2.jpg' %}"
+                                                                        alt="product-img"></a>
+                                    <span class="sticker-new">new</span>
+                                    <span class="sticker-sale">-5%</span>
+                                    <div class="quick-view-pro">
+                                        <a data-bs-toggle="modal" data-bs-target="#product-window" class="quick-view"
+                                           href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="pro-content">
+                                    <div class="rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                    <h4 class="pro-title"><a href="product-details.html">Fusion Backpack</a></h4>
+                                    <p><span class="price">$72.50</span></p>
+                                    <div class="pro-actions">
+                                        <div class="actions-primary">
+                                            <a href="cart.html" class="add-to-cart" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Cart">Add To Cart</a>
+                                        </div>
+                                        <div class="actions-secondary">
+                                            <a class="cart-wishlist" href="wishlist.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Wishlist"></a>
+                                            <a class="cart-compare" href="compare.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Compare"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Product End Here -->
+                            <!-- Single Product Start Here -->
+                            <div class="single-pander-product">
+                                <div class="pro-img">
+                                    <a href="product-details.html"><img src="{% static 'shop/img/products/p5.jpg' %}"
+                                                                        alt="product-img"></a>
+                                    <span class="sticker-new">new</span>
+                                    <span class="sticker-sale">-5%</span>
+                                    <div class="quick-view-pro">
+                                        <a data-bs-toggle="modal" data-bs-target="#product-window" class="quick-view"
+                                           href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="pro-content">
+                                    <div class="rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                    <h4 class="pro-title"><a href="product-details.html">Impulse Duffle</a></h4>
+                                    <p><span class="price">$45.50</span><span class="prev-price">$30.50</span></p>
+                                    <div class="pro-actions">
+                                        <div class="actions-primary">
+                                            <a href="cart.html" class="add-to-cart" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Cart">Add To Cart</a>
+                                        </div>
+                                        <div class="actions-secondary">
+                                            <a class="cart-wishlist" href="wishlist.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Wishlist"></a>
+                                            <a class="cart-compare" href="compare.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Compare"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Product End Here -->
+                            <!-- Single Product Start Here -->
+                            <div class="single-pander-product">
+                                <div class="pro-img">
+                                    <a href="product-details.html"><img src="{% static 'shop/img/products/p6.jpg' %}"
+                                                                        alt="product-img"></a>
+                                    <span class="sticker-new">new</span>
+                                    <span class="sticker-sale">-5%</span>
+                                    <div class="quick-view-pro">
+                                        <a data-bs-toggle="modal" data-bs-target="#product-window" class="quick-view"
+                                           href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="pro-content">
+                                    <div class="rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                    <h4 class="pro-title"><a href="product-details.html">Field Messenger</a></h4>
+                                    <p><span class="price">$55.50</span><span class="prev-price">$59.50</span></p>
+                                    <div class="pro-actions">
+                                        <div class="actions-primary">
+                                            <a href="cart.html" class="add-to-cart" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Cart">Add To Cart</a>
+                                        </div>
+                                        <div class="actions-secondary">
+                                            <a class="cart-wishlist" href="wishlist.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Wishlist"></a>
+                                            <a class="cart-compare" href="compare.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Compare"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Product End Here -->
+                            <!-- Single Product Start Here -->
+                            <div class="single-pander-product">
+                                <div class="pro-img">
+                                    <a href="product-details.html"><img src="{% static 'shop/img/products/p7.jpg' %}"
+                                                                        alt="product-img"></a>
+                                    <span class="sticker-new">new</span>
+                                    <span class="sticker-sale">-5%</span>
+                                    <div class="quick-view-pro">
+                                        <a data-bs-toggle="modal" data-bs-target="#product-window" class="quick-view"
+                                           href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="pro-content">
+                                    <div class="rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                    <h4 class="pro-title"><a href="product-details.html">Field Messenger</a></h4>
+                                    <p><span class="price">$42.50</span></p>
+                                    <div class="pro-actions">
+                                        <div class="actions-primary">
+                                            <a href="cart.html" class="add-to-cart" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Cart">Add To Cart</a>
+                                        </div>
+                                        <div class="actions-secondary">
+                                            <a class="cart-wishlist" href="wishlist.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Wishlist"></a>
+                                            <a class="cart-compare" href="compare.html" data-bs-toggle="tooltip"
+                                               data-bs-title="Add to Compare"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Product End Here -->
+                        </div>
+                        <!-- Rooms Product Activation End Here -->
+                    </div>
+                    <!-- #rooms End Here -->
+                </div>
+                <!-- Tab Content End -->
+            </div>
+            <!-- main-product-tab-area-->
+        </div>
+    </div>
+    <!-- Our Product Area End Here -->
+    <!-- Big Banner Area Start Here -->
+    <div class="big-banner pt-90">
+        <div class="container">
+            <div class="zoom">
+                <a href="shop.html"><img src="{% static 'shop/img/banner/b1.jpg' %}" alt="banner-img"></a>
+            </div>
+        </div>
+    </div>
+    <!-- Big Banner Area End Here -->
+
+{% endblock %}

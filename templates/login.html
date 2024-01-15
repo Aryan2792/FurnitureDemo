@@ -1,0 +1,67 @@
+{% extends 'ShopLayout.html' %}
+
+{% load static %}
+
+{% block main %}
+    <!-- Breadcrumb Area Start Here -->
+    <div class="breadcrumb-area">
+        <div class="container">
+            <ol class="breadcrumb breadcrumb-list">
+                <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+                <li class="breadcrumb-item active">login</li>
+            </ol>
+        </div>
+    </div>
+    <!-- Breadcrumb Area End Here -->
+
+    {#    Message section start#}
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                <strong>{{ message }}. </strong>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        {% endfor %}
+    {% endif %}
+
+    {#    Message section end#}
+
+    <!-- Login Page Start Here -->
+    <div class="login ptb-90">
+        <div class="container">
+            <h3 class="login-header">Log in to your account </h3>
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-8">
+                    <div class="login-form">
+                        <form action="login" method="post">
+                            {% csrf_token %}
+                            <div class="form-group row">
+                                <label for="email" class="col-sm-3 col-form-label">Email</label>
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control" id="email" name="email" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputPassword" class="col-sm-3 col-form-label">Password</label>
+                                <div class="col-sm-7">
+                                    <input type="password" class="form-control" id="inputPassword" name="password"
+                                           placeholder="Password">
+{#                                    <button class="btn show-btn" type="button">Show</button>#}
+                                </div>
+                            </div>
+                            <div class="login-details text-center mb-25 pt-4">
+{#                                <a href="forgot-password.html">Forgot your password? </a>#}
+                                <button type="submit" class="login-btn w-25">Sign in</button>
+                            </div>
+                            <div class="login-footer text-center">
+                                <p>No account? <a href="{% url 'register' %}">Create one here</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login Page End Here -->
+
+{% endblock %}
