@@ -80,7 +80,7 @@
                     <div class="header-top-right">
                         <ul>
                             {% if request.session.customer %}
-                                <li><a href="#">My Account<i class="fa fa-angle-down"></i></a>
+                                <li><a href="#">{{ request.session.customer.name }}<i class="fa fa-angle-down"></i></a>
                                     <!-- Dropdown Start -->
                                     <ul class="ht-dropdown">
                                         <li><a href="#">My Orders</a></li>
